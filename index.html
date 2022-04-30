@@ -11,7 +11,22 @@
 
 </head>
 <body>
-    
+     <!-- Colocando a logo na tela do Site --> 
+    <img class="logo" src="/assets/logo.png" alt="Gerador de senha Logo"/>
+
+    <main class="container-input">
+
+        <!-- Criando o botão e barra da quantidade de caracteres que vai conter na senha-->
+        <span>Tamanho<span id="valor"></span> caracteres </span>
+        <input id="slider" class="slider" type="range" min="5" max="25" value="13"/>
+        <button id="button" class="button-cta">Gerar senha</button>
+
+    </main>
+    <div id="container-password" class="container-password hide">
+        <span>Sua senha gerada foi:</span>
+        <span id="password" class="password">15461548</span>
+        <span>Clique na senha para copiar 👆</span>
+    </div>
 
     <script src="script.js"></script>
 </body>
